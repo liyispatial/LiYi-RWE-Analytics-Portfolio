@@ -8,7 +8,7 @@ This project demonstrates a robust, end-to-end analytical workflow to solve this
 
 ## Data & Cohort
 
-This analysis was conducted on data from a large, deeply-phenotyped prospective cohort study following US women and their children from birth to mid-life. The analytical dataset integrates rich longitudinal data, including clinical measures, participant surveys, and linked geospatial information on environmental exposures. The final analytical sample for this study included over 1,800 participants with complete data at baseline, demonstrating the application of these methods on a significant, real-world dataset.
+This analysis was conducted on data from a large, deeply-phenotyped prospective cohort study following US women and their children from birth to mid-life between 2000-2025. The analytical dataset integrates rich longitudinal data, including clinical measures, participant surveys, and linked geospatial information on environmental exposures. The final analytical sample for this study included over 2,000 participants with complete data at baseline, demonstrating the application of these methods on a significant, real-world dataset.
 
 ## Methodological Approach
 
