@@ -2,7 +2,7 @@
 
 Hello, my name is Li Yi, and I am a PhD-level RWE scientist specializing in applying advanced methods to solve complex health research problems.
 
-This portfolio showcases a selection of my work, demonstrating my capabilities in end-to-end study execution, advanced causal inference, building scalable data pipelines, and my conceptual mastery of RWE (claims) data analysis.
+This portfolio showcases a selection of my work, demonstrating my capabilities in end-to-end study execution, advanced causal inference, building scalable data pipelines, and my conceptual mastery of RWE (claims, cohorts) data analysis.
 
 ---
 
