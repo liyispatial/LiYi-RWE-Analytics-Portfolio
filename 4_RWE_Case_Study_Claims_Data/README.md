@@ -6,6 +6,14 @@ This document outlines the analytical strategy for a large-scale, longitudinal r
 
 While I cannot share the final proprietary analysis code, **my role on this project involved a close collaboration with the first author on the core data engineering and cohort construction phases.** This case study demonstrates my conceptual and practical understanding of executing a rigorous RWE study from start to finish using this complex data source.
 
+## Associated Publication
+
+This case study is based on the methods and collaborative work for the following peer-reviewed publication. My contribution is acknowledged in the author list.
+
+> Klompmaker, J.O., Mork, D., Zanobetti, A., et al. (2024). Associations of street-view greenspace with Parkinson’s disease hospitalizations in Medicare. *Environment International*.
+>
+> **[View on PubMed Central](https://pmc.ncbi.nlm.nih.gov/articles/PMC11199351/)**
+
 ---
 
 ## The Core Challenge: From Messy Data to Causal Questions
