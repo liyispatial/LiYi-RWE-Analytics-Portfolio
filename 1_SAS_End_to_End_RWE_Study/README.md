@@ -14,6 +14,14 @@ This analysis was conducted on data from the **Nurses' Health Study II (NHS2)**,
 *   **Rich Phenotyping:** It integrates rich, participant-level data from questionnaires, including demographics, lifestyle factors, clinical diagnoses, and medication use.
 *   **Data Fusion:** This cohort data was linked at the residential address level to multiple geospatial datasets, including novel street-view greenspace metrics (the primary exposure) and other environmental data like NDVI and air pollution.
 
+## Associated Publication
+
+This SAS project contains the core analysis code I developed as the **first author** for the following peer-reviewed publication.
+
+> Yi, L., Hart, J.E., Roscoe, C., et al. (2025). Greenspace and depression incidence in the US-based nationwide Nurses’ Health Study II: A deep learning analysis of street-view imagery. *Environment International*.
+>
+> **[View on PubMed](https://pubmed.ncbi.nlm.nih.gov/40209395/)**
+
 ## Methodological Approach & Structure
 
 The analysis is designed as an automated, reproducible system orchestrated by the **`master_run.sas`** script. This "driver" script manages the project's execution by calling each of the following modular scripts in sequence:
