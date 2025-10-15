@@ -10,7 +10,7 @@ This project demonstrates a complete, publication-quality workflow for this type
 
 This analysis was conducted on data from the **Nurses' Health Study II (NHS2)**, one of the largest and longest-running prospective cohort studies in the world. The analytical dataset is a powerful example of real-world data integration:
 
-*   **Longitudinal Data:** It includes data from over 80,000 participants followed biennially from 2001 to 2017.
+*   **Longitudinal Data:** It includes data from over 110,000 participants followed biennially from 1989 to 2021.
 *   **Rich Phenotyping:** It integrates rich, participant-level data from questionnaires, including demographics, lifestyle factors, clinical diagnoses, and medication use.
 *   **Data Fusion:** This cohort data was linked at the residential address level to multiple geospatial datasets, including novel street-view greenspace metrics (the primary exposure) and other environmental data like NDVI and air pollution.
 
