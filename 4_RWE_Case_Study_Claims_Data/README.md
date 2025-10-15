@@ -56,7 +56,7 @@ Once the cohort is built, the next step is to define the outcomes and select the
     *   An advanced and efficient alternative is to use a **Cox-equivalent re-parameterized Poisson model**. This involves aggregating the data into cells (e.g., by age, sex, and geography) and modeling the `count of events` with the `log of person-time` as an offset. This approach is mathematically equivalent to a time-varying Cox model but is far more scalable.
 
 3.  **Covariate Engineering & Robust Inference:**
-    *   Covariates for risk adjustment, like the **Charlson Comorbidity Index**, must be engineered by scanning all diagnosis codes in the look-back period.
+    *   Covariates for risk adjustment, like the **Comorbidity Index**, must be engineered by scanning all diagnosis codes in the look-back period.
     *   To account for correlated data (e.g., patients within the same geographic area), standard confidence intervals can be misleading. A more robust approach is to use a **bootstrap method**, resampling by the geographic unit (e.g., ZIP code) to calculate valid confidence intervals.
 
 ---
