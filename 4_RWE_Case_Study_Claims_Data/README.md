@@ -1,36 +1,37 @@
-# RWE Case Study: A Modular ETL Pipeline for Medicare Claims Data
+# RWE Case Study: Production-Ready ETL Pipeline for Medicare Claims
 
-## Project Overview
+## Objective
 
-This case study details the architecture of a large-scale, end-to-end ETL (Extract, Transform, Load) pipeline built in R. The primary objective was to process and integrate massive, disparate Medicare administrative datasets to create a single, analysis-ready "source of truth." This foundational dataset enabled a series of peer-reviewed epidemiological studies investigating the impact of environmental factors on health outcomes for over 65 million US seniors.
+This folder contains a production-ready R script that demonstrates a robust and scalable ETL (Extract, Transform, Load) pipeline for processing large-scale administrative claims data. The script's purpose is to identify the **first-ever hospitalization** for a specific condition (in this case, Parkinson's Disease) for a cohort of millions of Medicare beneficiaries, while correctly accounting for their continuous enrollment status.
 
-The principles and architecture demonstrated here are directly applicable to the challenges of Value-Based Care (VBC) analytics, where building a reliable, longitudinal patient record is the critical first step to measuring program ROI and performance guarantees.
+This script is a tangible demonstration of the methods described in this case study.
 
-## Methodology: A Modular, Multi-Pipeline Architecture
+## Associated Publication
 
-To handle the complexity and scale of the data, my team architected the project as a "research factory" composed of three distinct upstream pipelines that create core data assets, a midstream pipeline for integration, and a downstream pipeline for modeling. This modular design ensures each stage is maintainable, testable, and independently executable.
+The methods and logic demonstrated in this case study and the accompanying R script are based on the work for the following peer-reviewed publication, on which I am a co-author.
 
-### Upstream Pipeline A: The Cohort Builder (The "Who")
-*   **Input:** Raw Medicare denominator (enrollment) files.
-*   **Process:** A seven-step process that ingested raw data, calculated age, applied strict inclusion/exclusion criteria (e.g., removing HMO person-time), and established a continuous enrollment timeline for every beneficiary.
-*   **Output:** A clean, longitudinal cohort dataset defining exactly who was in our study and for how long.
+> Klompmaker, J.O., Mork, D., Zanobetti, A., et al. (2024). Associations of street-view greenspace with Parkinson’s disease hospitalizations in Medicare. *Environment International*.
+>
+> **[View on PubMed Central](https://pmc.ncbi.nlm.nih.gov/articles/PMC11199351/)**
 
-### Upstream Pipeline B: The Health Outcome Definer (The "What")
-*   **Input:** Raw Medicare inpatient claims files (MedPAR).
-*   **Process:** This pipeline processed terabytes of claims data, applying ICD-9 and ICD-10 logic to identify all hospital admissions for specific diseases of interest, such as Parkinson's Disease.
-*   **Output:** A series of clean, high-performance boolean flag files, one for each health outcome.
+---
 
-### Upstream Pipeline C: The Environmental Exposure Modeler (The "Where")
-*   **Input:** Raw geospatial and environmental datasets (e.g., satellite imagery, weather station data).
-*   **Process:** This pipeline leveraged my epidemiological expertise to translate raw environmental data into validated, health-relevant exposure metrics for every US ZIP code.
-*   **Output:** A clean, longitudinal exposure file.
+## Technical Solution & Engineering Best Practices
 
-### Midstream Pipeline: The Great Integration
-*   **Input:** The outputs from the three upstream pipelines.
-*   **Process:** This crucial stage performed the final, high-performance joins to link the "Who," the "What," and the "Where." It took the clean cohort, enriched it with the exposure data, and then filtered the health outcome data to only include events that occurred for valid members of the cohort.
-*   **Output:** The final, analysis-ready dataset for statistical modeling.
+This script has been refactored from a research script into a reusable and professional-grade tool, showcasing key software engineering principles:
 
-## Key Principles & Technologies
-*   **Performance at Scale:** The entire pipeline was built using high-performance R packages, primarily **`data.table`** for memory-efficient data manipulation and **`fst`** for rapid data serialization, which is essential for working with datasets too large for memory.
-*   **Modularity & Maintainability:** By separating concerns into distinct pipelines and scripts, the codebase is easier to debug, update, and for new team members to understand.
-*   **Reproducibility:** The environment was managed with **`renv`** to ensure long-term reproducibility of all findings.
+1.  **Modularity and Reusability:** The core logic for loading the large, multi-year datasets is encapsulated in a single, reusable function (`load_yearly_data`). This eliminates code duplication and makes the pipeline easy to adapt for other data sources.
+
+2.  **Configuration-Driven Design:** All file paths, years, and key variable names are stored in a `CONFIG` list at the top of the script. This separates the logic from the configuration, allowing the pipeline to be run on different data or for different years without changing the source code.
+
+3.  **Efficiency and Scalability:** The script uses the highly efficient `data.table` and `fst` packages, which are designed for performance on massive datasets. The data loading is automated through a programmatic loop, not manual copy-pasting, demonstrating an ability to build scalable solutions.
+
+4.  **Clarity and Maintainability:** The script is organized into a clear, logical workflow with numbered steps. Each step is explained with professional comments, making the code easy for a new team member to understand, review, and maintain.
+
+## Relevance for an RWE Role
+
+This ETL pipeline is a direct demonstration of the foundational skills required for any RWE data scientist. It proves my ability to:
+
+*   **Handle Large-Scale Claims Data:** I can efficiently process and manipulate datasets containing tens of millions of records spanning multiple years.
+*   **Build Automated Systems:** I write code that is not just for a single analysis but is a reusable tool that increases team efficiency and reproducibility.
+*   **Implement Core RWE Logic:** I can translate a complex scientific need (like identifying an incident event while respecting enrollment periods) into a robust, accurate data processing workflow.
