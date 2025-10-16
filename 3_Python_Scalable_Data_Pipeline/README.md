@@ -4,13 +4,13 @@
 
 A core challenge in modern RWE is the need to extract quantitative insights from non-tabular, unstructured data sources like medical images or digital pathology slides. Answering critical research questions often requires a solution that can process hundreds of thousands of these images in a robust, automated, and reproducible manner.
 
-This project demonstrates a production-minded data processing pipeline built in Python. Its purpose was to perform semantic segmentation on a massive dataset of street-level images to create a novel, quantitative dataset of environmental features for epidemiological analysis.
+This project demonstrates a production-minded data processing pipeline built in Python. Its purpose was to perform semantic segmentation on a massive dataset of street-level images to create a novel, quantitative dataset of environmental and neighborhood SDoH features for epidemiological analysis.
 
 ## Associated Publication
 
-The pipeline demonstrated in this folder is the core technical engine that was used to generate the novel geospatial data for the following peer-reviewed publication, on which I am a co-author.
+The pipeline demonstrated in this folder is the core technical engine that was used to generate the novel SDoH data for the following peer-reviewed JAMA publication, on which I am the first author.
 
-> Larkin, A., Huang, T., Chen, L., et al. (2025). Developing Nationwide Estimates of Built Environment Quality Characteristics using Street View Imagery and Computer Vision. *Environmental Science & Technology*.
+> Yi, L., Harnois-Leblanc, S., Rifas-Shiman, S.L., et al. (2024). Satellite-based and street-view green space and adiposity in US children. *JAMA Network Open*.
 >
 > **[View on PubMed](https://pubmed.ncbi.nlm.nih.gov/39636637/)**
 
