@@ -6,6 +6,15 @@ A core challenge in modern RWE is the need to extract quantitative insights from
 
 This project demonstrates a production-minded data processing pipeline built in Python. Its purpose was to perform semantic segmentation on a massive dataset of street-level images to create a novel, quantitative dataset of environmental features for epidemiological analysis.
 
+## Associated Publication
+
+The pipeline demonstrated in this folder is the core technical engine that was used to generate the novel geospatial data for the following peer-reviewed publication, on which I am a co-author.
+
+> Larkin, A., Huang, T., Chen, L., et al. (2025). Developing Nationwide Estimates of Built Environment Quality Characteristics using Street View Imagery and Computer Vision. *Environmental Science & Technology*.
+>
+> **[View on PubMed](https://pubmed.ncbi.nlm.nih.gov/39636637/)**
+
+
 ## Technical Solution & Engineering Best Practices
 
 This is not a one-off analysis script; it is a reusable, command-line-driven tool that showcases professional software development practices.
