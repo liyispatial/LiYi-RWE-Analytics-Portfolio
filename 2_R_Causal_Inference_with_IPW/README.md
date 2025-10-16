@@ -23,10 +23,12 @@ This script implements a complete causal inference analysis, including:
 7.  **Inference via Bootstrapping:** Implementing a non-parametric bootstrap to generate robust 95% confidence intervals.
 8.  **Visualization:** Generating a publication-quality forest plot to summarize the results of all sensitivity analyses.
 
-## Relevance to AbbVie & RWE
+## Relevance for an RWE Role
 
 This project is a direct demonstration of my ability to lead a methodologically complex study that meets the highest standards of causal inference in observational research.
 
-*   **Technical Expertise:** It showcases proficiency in the advanced statistical methods required to generate defensible real-world evidence, a core requirement for HEOR.
-*   **Production-Minded Code:** The analysis is structured into logical, reusable functions and driven by a central configuration list. This demonstrates an understanding of how to write clean, maintainable, and efficient code suitable for a collaborative team environment.
-*   **End-to-End Ownership:** This script proves my ability to manage the entire analytical lifecycle—from data preparation on a complex longitudinal cohort to the final, robust estimation and clear communication of a causal effect.
+*   **Technical Expertise:** It showcases proficiency in the advanced statistical methods required to generate defensible real-world evidence, a core requirement for any HEOR or advanced analytics team.
+
+*   **Production-Minded Code:** The analysis is structured into logical, reusable functions and driven by a central configuration list. This demonstrates an understanding of how to write clean, maintainable, and efficient code suitable for a collaborative, production-oriented team environment.
+
+*   **End-to-End Ownership:** As the first author of the resulting publication, this script proves my ability to manage the entire analytical lifecycle—from data preparation on a complex longitudinal cohort to the final, robust estimation and clear communication of a causal effect.

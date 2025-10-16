@@ -31,12 +31,12 @@ The analysis is designed as an automated, reproducible system orchestrated by th
 3.  **`05_run_survival_models.sas`:** Automatically executes the full suite of primary and sensitivity analyses, iterating through dozens of **Cox proportional hazards models (`PROC PHREG`)** for different exposure definitions and outcomes.
 4.  **`06_run_stratified_analysis.sas`:** Performs all pre-specified stratified analyses and interaction tests to evaluate potential effect modification by factors like Census Region.
 
-## Relevance to AbbVie & RWE
+## Relevance for an RWE Role
 
 This project is a direct demonstration of my ability to lead a rigorous observational study using the industry-standard tool for RWE, with a strong focus on automation and efficiency.
 
 *   **SAS Proficiency & RWE Methods:** It showcases deep expertise in SAS for managing complex longitudinal data and applying core RWE methods like survival analysis (`PROC PHREG`). My experience with this large-scale cohort is directly transferable to analyzing patient-level data from claims or EMRs.
 
-*   **Production-Minded Workflow:** This is the key strength of the project. The code is not a one-off script; it is an automated system. It demonstrates a commitment to the **DRY (Don't Repeat Yourself) principle** through the extensive use of **advanced macro programming**. Repetitive tasks—like running sensitivity analyses or generating stratified tables—are handled by automated loops, which drastically reduces the risk of error and makes the entire project more efficient and maintainable. This directly addresses the JD's focus on "standardizing processes" and "reducing operational complexity."
+*   **Production-Minded Workflow:** This is the key strength of the project. The code is not a one-off script; it is an automated system. It demonstrates a commitment to the **DRY (Don't Repeat Yourself) principle** through the extensive use of **advanced macro programming**. Repetitive tasks are handled by automated loops, which drastically reduces the risk of error and makes the entire project more efficient and maintainable—a core requirement for any RWE team looking to scale its operations.
 
-*   **End-to-End Ownership:** It demonstrates my ability to manage the entire analytical lifecycle—from raw data ingestion to the final, formatted Excel reports of the primary, sensitivity, and stratified analyses. This proves I can function as a true "analytics lead" who can deliver a complete, robust, and well-documented project from start to finish.
+*   **End-to-End Ownership:** As the first author of the resulting publication, this project proves my ability to manage the entire analytical lifecycle—from raw data ingestion to the final, formatted Excel reports of the primary, sensitivity, and stratified analyses. This demonstrates I can function as a true "analytics lead" who can deliver a complete, robust, and well-documented project from start to finish.

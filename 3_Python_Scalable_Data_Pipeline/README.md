@@ -36,10 +36,12 @@ The included `run_pipeline.sh` script is a production-ready example of how a bat
 
 This demonstrates a complete, end-to-end workflow, from the core Python application to its deployment and execution in a scalable, high-performance environment.
 
-## Relevance to AbbVie & RWE
+## Relevance for an RWE Role
 
 This project is a direct demonstration of my ability to build the efficient, automated systems required by a modern RWE team.
 
-*   **Systems Builder Mindset:** It proves I can do more than just analyze data; I can build the tools and platforms that increase a team's efficiency and unlock new capabilities. This directly addresses the JD's focus on "standardizing processes" and "reducing operational complexity."
+*   **Systems Builder Mindset:** It proves I can do more than just analyze data; I can build the tools and platforms that increase a team's efficiency and unlock new capabilities. This is a core requirement for any RWE team looking to standardize processes and reduce operational complexity.
+
 *   **Handling Unstructured Data:** This methodology of building a system to process and quantify a non-tabular data source is directly transferable to high-value RWE data types, such as digital pathology slides, MRIs, or other medical imaging.
+
 *   **Production-Ready Skills:** It showcases my proficiency with the engineering best practices required to build reliable, maintainable, and collaborative code in Python.
